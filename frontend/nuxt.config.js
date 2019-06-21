@@ -90,7 +90,7 @@ export default {
     */
     extend(config, ctx) {
     },
-    publicPath: '/nuxt/'
+    publicPath: '/app/nuxt/'
     
   },
   router: {

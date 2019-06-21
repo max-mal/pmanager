@@ -1,6 +1,13 @@
 title = "Page not found (404)"
 url = "/404"
 layout = "default"
+is_hidden = 0
+==
+<?php
+function onStart(){
+    return \Redirect::to('/app/index.html');
+}
+?>
 ==
 <div class="jumbotron">
     <div class="container">

@@ -15,8 +15,8 @@
     ##
     ## Uncomment following lines to force HTTPS.
     ##
-    # RewriteCond %{HTTPS} off
-    # RewriteRule (.*) https://%{SERVER_NAME}/$1 [R,L]
+    RewriteCond %{HTTPS} off
+    RewriteRule (.*) https://%{SERVER_NAME}/$1 [R,L]
 
     ##
     ## Black listed folders
@@ -34,6 +34,7 @@
     ## White listed folders
     ##
     RewriteCond %{REQUEST_FILENAME} -f
+    RewriteCond %{REQUEST_FILENAME} !/app/*
     RewriteCond %{REQUEST_FILENAME} !/.well-known/*
     RewriteCond %{REQUEST_FILENAME} !/storage/app/uploads/.*
     RewriteCond %{REQUEST_FILENAME} !/storage/app/media/.*
