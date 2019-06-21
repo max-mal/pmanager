@@ -1,6 +1,6 @@
 import colors from 'vuetify/es5/util/colors'
 
-const apiUrl = 'http://127.0.0.1:8000/api/'
+const apiUrl = 'https://pmanager.my-pc.pw/api/'
 
 export default {
   mode: 'spa',
