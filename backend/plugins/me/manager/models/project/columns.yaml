@@ -1,0 +1,13 @@
+columns:
+    id:
+        label: id
+        type: number
+    name:
+        label: name
+        type: text
+    description:
+        label: description
+        type: text
+    parent_id:
+        label: parent_id
+        type: number

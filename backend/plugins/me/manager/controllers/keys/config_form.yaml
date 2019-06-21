@@ -1,0 +1,11 @@
+name: Keys
+modelClass: Me\Manager\Models\Key
+form: $/me/manager/models/key/fields.yaml
+defaultRedirect: me/manager/keys
+create:
+    redirect: 'me/manager/keys/update/:id'
+    redirectClose: me/manager/keys
+update:
+    redirect: me/manager/keys
+    redirectClose: me/manager/keys
+preview: {  }

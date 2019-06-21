@@ -1,0 +1,25 @@
+plugin:
+    name: 'me.manager::lang.plugin.name'
+    description: 'me.manager::lang.plugin.description'
+    author: me
+    icon: oc-icon-key
+    homepage: ''
+permissions:
+    'manager::admin':
+        tab: 'Manager Admin'
+        label: 'Manager Admin'
+navigation:
+    manager-keys:
+        label: Keys
+        url: me/manager/keys
+        icon: icon-key
+        permissions:
+            - 'manager::admin'
+    manager-projects:
+        label: Projects
+        url: me/manager/projects
+        icon: icon-folder
+    manager-records:
+        label: Records
+        url: me/manager/records
+        icon: icon-pencil

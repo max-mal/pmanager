@@ -1,0 +1,15 @@
+fields:
+    user_id:
+        label: 'User ID'
+        span: auto
+        type: text
+    public_key:
+        label: 'Public Key'
+        size: ''
+        span: auto
+        type: textarea
+    private_key:
+        label: 'Private Key'
+        size: ''
+        span: auto
+        type: textarea

@@ -1,0 +1,32 @@
+div#pmanager {
+    position:  absolute;
+    color: white;
+    background: #303030;
+    min-width: 200px;
+    /* height:  400px; */
+    top: 49px;
+    padding:  20px;
+    display: none;
+}
+
+div#pmanager ul {list-style-type:  none;}
+
+div#pmanager ul {
+    background: #1d1d1d;
+    padding:  20px;
+    margin:  auto;
+    border-radius:  3px;
+    margin-top:  22px;
+}
+
+#pmanager ul li {
+    border-bottom: 1px solid #716c6c8f;
+}
+div#pmanager {
+    z-index:  9999999;
+}
+.pwd-toggler {
+    margin-top: 10px;
+    z-index: 9999999;
+    position: relative;
+}

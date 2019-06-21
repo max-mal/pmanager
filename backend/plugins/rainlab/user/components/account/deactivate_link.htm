@@ -1,0 +1,28 @@
+<a
+    href="javascript:;"
+    onclick="$('#accountDeactivateForm').toggle()">
+    Деактивировать аккаунт
+</a>
+
+<div id="accountDeactivateForm" style="display: none">
+    {{ form_ajax('onDeactivate') }}
+        <hr />
+        <h3>Вы действительно хотите деактивировать аккаунт?</h3>
+        <p>
+            Ваш аккаунт будет деактивирован и Ваши данные будут удалены из системы.
+            Вы сможете восстановить аккаунт, выполнив вход в него еще раз.
+        </p>
+        <div class="form-group">
+            <label for="accountDeletePassword">Введите Ваш пароль для подтверждения:</label>
+            <input name="password" type="password" class="form-control" id="accountDeletePassword" />
+        </div>
+        <button type="submit" class="btn btn-danger">
+            Подтвердить деактивацию
+        </button>
+        <a
+            href="javascript:;"
+            onclick="$('#accountDeactivateForm').toggle()">
+            Я передумал(а)
+        </a>
+    {{ form_close() }}
+</div>

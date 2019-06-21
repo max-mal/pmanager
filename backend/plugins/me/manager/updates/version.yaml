@@ -1,0 +1,32 @@
+1.0.1:
+    - 'Initialize plugin.'
+1.0.2:
+    - 'Created table me_manager_key'
+    - builder_table_create_me_manager_key.php
+1.0.3:
+    - 'Created table me_manager_project'
+    - builder_table_create_me_manager_project.php
+1.0.4:
+    - 'Created table me_manager_record'
+    - builder_table_create_me_manager_record.php
+1.0.5:
+    - 'Created table me_manager_project_access'
+    - builder_table_create_me_manager_project_access.php
+1.0.6:
+    - 'Updated table me_manager_key'
+    - builder_table_update_me_manager_key.php
+1.0.7:
+    - 'Drop table me_manager_record'
+    - builder_table_delete_me_manager_record.php
+1.0.8:
+    - 'Created table me_manager_record'
+    - builder_table_create_me_manager_record_2.php
+1.0.9:
+    - 'Updated table me_manager_record'
+    - builder_table_update_me_manager_record.php
+1.0.10:
+    - 'Updated table me_manager_record'
+    - builder_table_update_me_manager_record_2.php
+1.0.11:
+    - 'Updated table me_manager_record'
+    - builder_table_update_me_manager_record_3.php

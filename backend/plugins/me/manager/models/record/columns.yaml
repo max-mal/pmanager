@@ -1,0 +1,16 @@
+columns:
+    id:
+        label: id
+        type: number
+    user_id:
+        label: user_id
+        type: number
+    project_id:
+        label: project_id
+        type: number
+    url_hash:
+        label: url_hash
+        type: text
+    data:
+        label: data
+        type: text
