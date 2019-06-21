@@ -125,7 +125,7 @@ export default {
       }).then((response)=>{
         that.getRecords()
       })
-      if (chrome.management) {
+      if ( window.chrome && window.chrome.management) {
         chrome.runtime.sendMessage({action: "ClearCache"});
       }
     }
@@ -168,7 +168,7 @@ export default {
   },
   mounted() {
     let that = this
-    if (chrome.management) {
+    if (window.chrome && window.chrome.management) {
       chrome.tabs.query({active: true}, function (tabs) {
          let url = (tabs[0].url.replace('https://', '').replace('http://', '').split('/')[0])
          that.site_url = url

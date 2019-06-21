@@ -88,10 +88,12 @@
 
 <style>
   
-  div#app {
-    min-width: 768px;
-    min-height: 700px;
-  }
+    @media screen and (min-width: 700px) {
+	div#app {
+	    min-width: 768px; 
+	    min-height: 700px;
+	}
+    }
 </style>
 
 <script>

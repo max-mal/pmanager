@@ -71,7 +71,7 @@ export default {
       .catch(function (error) {
         console.log(error);
       });
-      if (chrome.management) {
+      if (window.chrome && window.chrome.management) {
         chrome.runtime.sendMessage({action: "ClearCache"});
       }
     },
@@ -99,7 +99,7 @@ export default {
   },
   mounted() {
     var that = this
-    if (chrome.management) {
+    if (window.chrome && window.chrome.management) {
       chrome.tabs.query({active: true}, function (tabs) {
          let url = (tabs[0].url.replace('https://', '').replace('http://', '').split('/')[0])
          that.url = url

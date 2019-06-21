@@ -124,7 +124,7 @@ export default {
     },
     storePassword(password){
       let that = this
-      if (chrome.management) {
+      if (window.chrome && window.chrome.management) {
         chrome.runtime.sendMessage({action: "password", password});
         console.log('Sending password....')
       }
@@ -144,7 +144,7 @@ export default {
   },
   mounted() {
     let that = this
-    if (chrome.management && !that.$store.state.masterPassword) {
+    if (window.chrome && window.chrome.management && !that.$store.state.masterPassword) {
       chrome.runtime.sendMessage({action: "GetPassword"}, function(response) {
         if (response.password) {
           that.$store.commit('setMasterPassword', response.password)
