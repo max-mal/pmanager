@@ -1,6 +1,6 @@
 import colors from 'vuetify/es5/util/colors'
 
-const apiUrl = 'http://127.0.0.1:8000/api/'
+const apiUrl = 'http://192.168.88.241:8000/api/'
 
 export default {
   mode: 'spa',

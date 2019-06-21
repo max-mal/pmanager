@@ -6,8 +6,8 @@ mkdir www
 cd ../frontend
 mv nuxt.config.js nuxt.config.js.orig
 cp ../android-app/nuxt.config.js ./
-mv nuxt.config.js.orig nuxt.config.js
 npm run build
+mv nuxt.config.js.orig nuxt.config.js
 
 cd ../android-app
 cp -r ../frontend/dist/* ./www/
