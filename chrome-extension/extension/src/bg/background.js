@@ -55,7 +55,7 @@ chrome.runtime.onMessage.addListener(
    			cache[url] = null
    		}
 
-   		fetch("http://127.0.0.1:8000/api/GetRecords", {
+   		fetch("https://pmanager.my-pc.pw/api/GetRecords", {
    			"credentials":"include",
    			"headers": {
 				"Content-Type": "application/x-www-form-urlencoded;charset=UTF-8"
